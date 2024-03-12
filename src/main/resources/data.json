@@ -1,0 +1,10 @@
+{
+  "name":"Son cao bui",
+  "sex": "Nam",
+  "age" : 22,
+  "contact":{
+    "email":"sonbuidr07@gmail.com",
+    "phone" : "0941299095"
+  },
+  "subjects": ["Java6","Java5"]
+}
