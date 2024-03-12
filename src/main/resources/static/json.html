@@ -1,0 +1,37 @@
+<html>
+
+<head></head>
+<body>
+    <script>
+       var sv = {
+           "name":"Son cao bui",
+           "sex": "Nam",
+           "age" : 22,
+           "contact":{
+               "email":"sonbuidr07@gmail.com",
+               "phone" : "0941299095"
+           },
+           "subjects": ["Java6","Java5"]
+       }
+
+       // console.log(sv);
+       // sv.name = sv['name'].toUpperCase(); // sv.name
+       // console.log(sv.name);
+
+       // for (var i in sv){
+       //     console.log(i,sv[i])
+       // }
+
+       //Chuyen objectJson --> Text
+       var text = JSON.stringify(sv)
+       console.log(text)
+
+       // //Chuyen text --> ObjJson
+       var obj = JSON.parse(text)
+       console.log(obj,obj.name)
+
+
+    </script>
+</body>
+
+</html>
