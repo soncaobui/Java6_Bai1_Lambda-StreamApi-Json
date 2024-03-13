@@ -1,0 +1,25 @@
+<!DOCTYPE html >
+<html xmlns="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+
+</head>
+
+<body>
+    <img th:src="@{/image/z4863075299220_edaf3bba8f27f5b6f5d9d93ab35adad6.jpg}">
+    <nav th:replace="~{/layout/menu.html}"></nav>
+
+    <h1 th:text="${mess}"></h1>
+    <ul th:object="${sv}">
+        <l1 th:text="${sv.name}"></l1>
+        <l1 th:text="*{sex}"></l1>
+        <l1 th:text="*{age}"></l1>
+        <l1 th:text="*{contact.email}"></l1>
+    </ul>
+
+
+
+</body>
+
+</html>
