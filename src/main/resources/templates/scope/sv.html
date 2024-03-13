@@ -8,17 +8,33 @@
 
 <body>
 <a th:href="@{|sv?index=${n-1}|}"> Pre</a>
-    [~[[${n+1}]]/2~]
+[~[[${n+1}]]/2~]
 <a th:href="@{|sv?index=${n+1}|}"> Next</a>
 
-    <ul>
-        <li>Name : [[${sv.name}]]</li>
-        <li>Sex : [[${sv.sex}]]</li>
-        <li>Age : [[${sv.age}]]</li>
-        <li>Mail : [[${sv.contact.email}]]</li>
-        <li>Phone : [[${sv.contact.phone}]]</li>
-        <li>Phone : [[${sv.subjects}]]</li>
-    </ul>
+
+<ul>
+    <li th:each="sv,state:${lst}">
+        <a th:href="@{|sv?index=${state.index}|}">[[${sv.name}]]</a>
+    </li>
+
+</ul>
+<ul>
+    <li>Name : [[${sv.name}]]</li>
+    <li>Sex : [[${sv.sex}]]</li>
+    <li>Age : [[${sv.age}]]</li>
+    <li>Mail : [[${sv.contact.email}]]</li>
+    <li>Phone : [[${sv.contact.phone}]]</li>
+    <li>Subjects : [[${sv.subjects}]]</li>
+    <li th:switch="*{#arrays.length(lst)}">
+        <b th:case="1">Moi vao</b>
+        <b th:case="2">Dang hoc</b>
+        <b th:case="3">Sap cut</b>
+        <b th:case="*">Sap cut</b>
+    </li>
+    <li th:if="|*{age}>20|"> Lon roi nhe </li>
+
+
+</ul>
 
 </body>
 

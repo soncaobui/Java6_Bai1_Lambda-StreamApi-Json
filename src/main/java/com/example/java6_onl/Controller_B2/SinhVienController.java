@@ -25,6 +25,7 @@ public class SinhVienController {
         int i = index.orElse(0);
         model.addAttribute("n",i);
         model.addAttribute("sv",list.get(i));
+        model.addAttribute("lst",list);
         return "scope/sv";
     }
 }

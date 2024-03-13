@@ -1,25 +1,57 @@
 [
   {
-    "name":"Son cao bui",
+    "name": "Son cao bui",
     "sex": "Nam",
-    "age" : 22,
-    "contact":{
-      "email":"sonbuidr07@gmail.com",
-      "phone" : "0941299095"
+    "age": 22,
+    "contact": {
+      "email": "sonbuidr07@gmail.com",
+      "phone": "0941299095"
     },
-    "subjects": ["Java6","Java5"]
+    "subjects": [
+      "Java6",
+      "Java5"
+    ]
   },
-
   {
-    "name":"Son cao bui 2",
+    "name": "Son cao bui 2",
     "sex": "Nu",
-    "age" : 19,
-    "contact":{
-      "email":"sonbuidr@gmail.com",
-      "phone" : "0941299095"
+    "age": 19,
+    "contact": {
+      "email": "sonbuidr@gmail.com",
+      "phone": "0941299095"
     },
-    "subjects": ["Java1","Java2"]
+    "subjects": [
+      "Java1",
+      "Java2"
+    ]
+  },
+  {
+    "name": "Tao la bo loppby",
+    "sex": "Nu",
+    "age": 19,
+    "contact": {
+      "email": "hihih@gmail.com",
+      "phone": "0941299095"
+    },
+    "subjects": [
+      "Java1",
+      "Java2",
+      "Java5",
+      "Java6"
+    ]
+  },
+  {
+    "name": "Ok e oi",
+    "sex": "Nu",
+    "age": 21,
+    "contact": {
+      "email": "hihih@gmail.com",
+      "phone": "0941299095"
+    },
+    "subjects": [
+      "Lol 2024",
+      "Java2",
+      "Java6"
+    ]
   }
-
-
 ]
